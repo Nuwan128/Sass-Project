@@ -1,0 +1,140 @@
+@import "./config";
+body{
+    // color: white;
+}
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+   
+}
+.nav-bar{
+    @include displayFlex(space-between,center,row);
+    margin: 20px 100px;
+    height: 100px;
+    border-radius: 4px;
+    box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19) ;
+    background:rgba(255, 255, 255, 0.1);
+    .logo{
+        width: 150px;
+        height: 150px;
+        background: url(/img/logo/2.png) no-repeat ;
+        background-size: cover;
+        @include transition-ease;
+        &:hover{
+            width: 150px;
+            height: 150px;
+            background: url(/img/logo/2.hover.png) no-repeat;
+            background-size: cover;
+            @include transition-ease;
+
+        }
+    }
+    .nav{
+        @include displayFlex(space-between,center,row);
+        .menu-nav{
+            @include displayFlex(none,none,row);
+            &_item{
+                list-style: none;
+                margin-right: 40px;
+                // text-shadow: 3px 3px 30px black;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 20px;
+                    @include transition-ease;
+                    &:hover{
+                        color: $primaryColor;
+                    }
+                }
+            }
+    
+        }
+        .nav-bar_btn{
+            clip-path:polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+            width: 200px;
+            text-align: center;
+            box-shadow: $boxShadow;
+           
+            &:hover{
+                transform: scale(1.05);
+                border-radius: 0 4px 4px 0;
+                box-shadow:$boxShadow;
+            }
+            
+
+            .btn-start{
+                
+                @include forButton(200px,100px,$primaryColor,white);
+              
+                span{
+                    margin-left: 20px;
+                    font-size: 15px;
+                    font-weight: bolder;
+                }
+                
+              
+            }
+        }
+    }
+    
+
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+
+.home{
+    height: 100vh;
+    padding-top: 35vh;
+    padding-left: 100px;
+    align-items: center;
+    background:url(/img/1.png) no-repeat fixed;
+    background-size:cover;
+    .home_content{
+        color: white;
+        width: 45vw;
+        line-height: 1;
+        // text-shadow: $textShadow;
+        .home-p1,.home-p2{
+            margin: 10px 0 10px 0;
+            font-weight: 500;
+            opacity: 0.8;
+            font-size: 18px;
+        }
+        h1{
+            font-size: 80px;
+            margin-bottom:25px;
+            padding-bottom: 30px;
+        }
+
+
+        .btn{
+            margin: 20px 10px 10px 0;
+            box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19) ;
+    background:rgba(255, 255, 255, 0.1);
+        }
+        .btn-started{
+            &:hover{
+                box-shadow:$boxShadow;
+            }
+            @include forButton(200px,50px,$primaryColor,white);
+            i{
+                margin-left: 10px
+                
+            }
+        }
+        .btn-view{
+            &:hover{
+                box-shadow:$boxShadow;
+            }
+            @include forButton(180px,50px,white,$primaryColor);
+            i{
+                margin-left: 10px
+            }
+        }
+    }
+   
+    
+}
