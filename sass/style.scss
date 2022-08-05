@@ -1,14 +1,14 @@
 @import "./config";
-body{
-    // color: white;
-}
+
 header{
     width: 100%;
     position: fixed;
     z-index: 2;
    
 }
+//--nav bar--
 .nav-bar{
+    @include transition-ease;
     @include displayFlex(space-between,center,row);
     margin: 20px 100px;
     height: 100px;
@@ -37,7 +37,6 @@ header{
             &_item{
                 list-style: none;
                 margin-right: 40px;
-                // text-shadow: 3px 3px 30px black;
                 a{
                     text-decoration: none;
                     color: white;
@@ -51,22 +50,25 @@ header{
     
         }
         .nav-bar_btn{
+            
             clip-path:polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
             width: 200px;
             text-align: center;
             box-shadow: $boxShadow;
            
             &:hover{
-                transform: scale(1.05);
+                transform: scale(1.1);
                 border-radius: 0 4px 4px 0;
                 box-shadow:$boxShadow;
+                transition:ease-in-out 0.3s;
+               
+             
             }
             
-
             .btn-start{
                 
                 @include forButton(200px,100px,$primaryColor,white);
-              
+               
                 span{
                     margin-left: 20px;
                     font-size: 15px;
@@ -76,10 +78,62 @@ header{
               
             }
         }
+        
     }
-    
-
 }
+//--sticky--
+.sticky{
+    @include transition-ease;
+    height: 50px;
+    background:#22C8BA;
+    margin: 0;
+    .nav{
+        .menu-nav{
+            @include displayFlex(none,none,row);
+            &_item{
+    
+                a{
+                    @include transition-ease;
+                    &:hover{
+                        color: #3b71aa;
+                        
+                        @include transition-ease;
+                        // background-color: $primaryColor;
+                    }
+                }
+            }
+        }
+        .nav-bar_btn{
+            clip-path:polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+            @include transition-ease;
+            &:hover{
+                transform: scale(1.2);
+                border-radius: 0 4px 4px 0;
+            }
+            .btn-start{
+                
+                @include forButton(200px,50px,$primaryColor,white);
+               
+            }
+        }
+        
+
+    }
+      
+        
+    
+    .logo{
+        width: 95px;
+        height: 95px;
+        &:hover{
+            width: 95px;
+            height: 95px;
+            background: url(/img/logo/3.png) no-repeat;
+            background-size: cover;
+        }
+    }
+}  
+
 main{
     height: 100%;
     width: 100%;
@@ -113,7 +167,7 @@ main{
         .btn{
             margin: 20px 10px 10px 0;
             box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19) ;
-    background:rgba(255, 255, 255, 0.1);
+            background:rgba(255, 255, 255, 0.1);
         }
         .btn-started{
             &:hover{

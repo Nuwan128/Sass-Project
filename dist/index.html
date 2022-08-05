@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="/img/logo/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://kit.fontawesome.com/13eb9e456d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/13eb9e456d.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
   
 </head>
@@ -15,7 +17,7 @@
         <div class="menu-btn">
             <span class="menu-btn_burger"></span>
         </div>
-        <div class="nav-bar">
+        <div class="nav-bar" >
             <div class="logo"></div>
             <nav class="nav">
                 <ul class="menu-nav">
@@ -34,7 +36,7 @@
     </header>
     <main>
         <section class="home" >
-            <div class="home_content">
+            <div class="home_content" data-aos="fade-up" data-aos-duration="2000">
                 <p class="home-p1">WELCOME TO ACADEMIA</p>
             <h1 class="home-heading">Education Opens up the Mind</h1>
             <p class="home-p2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -49,6 +51,35 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maiores asperiores magnam, nihil corporis voluptas quos atque quasi accusantium. Dolorum natus placeat incidunt vel sunt? Sit quod consectetur eum natus.</p>
+
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // once: false,
+      });
+    </script>
+    <script>
+        window.addEventListener('scroll',()=>{
+            let navbar = document.querySelector('.nav-bar');
+            navbar.classList.toggle('sticky',window.scrollY > 0);
+        })
+    </script>
 </body>
 </html>

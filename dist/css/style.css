@@ -13,6 +13,7 @@ header {
 }
 
 .nav-bar {
+  transition: all 0.5s ease-in-out;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,9 +71,10 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .nav-bar .nav .nav-bar_btn:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   border-radius: 0 4px 4px 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: ease-in-out 0.3s;
 }
 .nav-bar .nav .nav-bar_btn .btn-start {
   height: 100px;
@@ -91,6 +93,58 @@ header {
   margin-left: 20px;
   font-size: 15px;
   font-weight: bolder;
+}
+
+.sticky {
+  transition: all 0.5s ease-in-out;
+  height: 50px;
+  background: #22C8BA;
+  margin: 0;
+}
+.sticky .nav .menu-nav {
+  display: flex;
+  justify-content: none;
+  align-items: none;
+  flex-direction: row;
+}
+.sticky .nav .menu-nav_item a {
+  transition: all 0.5s ease-in-out;
+}
+.sticky .nav .menu-nav_item a:hover {
+  color: #3b71aa;
+  transition: all 0.5s ease-in-out;
+}
+.sticky .nav .nav-bar_btn {
+  -webkit-clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+  transition: all 0.5s ease-in-out;
+}
+.sticky .nav .nav-bar_btn:hover {
+  transform: scale(1.2);
+  border-radius: 0 4px 4px 0;
+}
+.sticky .nav .nav-bar_btn .btn-start {
+  height: 50px;
+  width: 200px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: #1eb2a6;
+  border: 1px solid #1eb2a6;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.sticky .logo {
+  width: 95px;
+  height: 95px;
+}
+.sticky .logo:hover {
+  width: 95px;
+  height: 95px;
+  background: url(/img/logo/3.png) no-repeat;
+  background-size: cover;
 }
 
 main {
