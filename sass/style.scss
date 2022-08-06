@@ -1,8 +1,9 @@
 @import "./config";
 @import "./about";
+@import "./ourCourses";
 
 header{
-    width: 100%;
+    width: 100vw;
     position: fixed;
     z-index: 2;
    
@@ -192,4 +193,32 @@ main{
     }
    
     
+}
+.techstack{
+    h2{
+        color: $thidColor;
+        font-size: 50px;
+        font-weight: 600;
+        width: 30vw;
+    }
+    padding: 100px;
+    @include displayFlex(space-between,bas,row);
+    ul{
+        @include displayFlex(none,none,row);
+        list-style: none;
+        .learn-list-item{
+            padding: 0 20px;
+            font-size: 70px;
+            i{
+                color: $thidColor;
+            }
+           
+            &:hover{
+                i{
+                    @include transition-ease;
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
 }

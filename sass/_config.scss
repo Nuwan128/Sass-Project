@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Barlow', sans-serif;
+    // outline: 1px solid limegreen !important;
+    // background: rgb(0 100 0/ 0.1);
+
 }
 //flex
 @mixin displayFlex($justify,$align,$direction) {
@@ -31,6 +34,13 @@
 }
 @mixin transition-ease {
     transition: all 0.5s ease-in-out;
+}
+@mixin headers ($margin){
+    margin: $margin;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1;
+    color: $thidColor;
 }
 //--variables--
 $primaryColor:#1eb2a6;
