@@ -1,9 +1,103 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Barlow", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+
+.about {
+  width: 100vw;
+  height: 100vw;
+  background: #F8F8F8;
+}
+.about .about-content {
+  padding: 0 100px;
+  display: flex;
+  justify-content: none;
+  align-items: none;
+  flex-direction: row;
+}
+.about .about-content .about-img {
+  width: 60vw;
+  height: 105vh;
+  background: url(/img/side.png) no-repeat center;
+  background-size: cover;
+}
+.about .about-content .learn-any {
+  margin-top: 55px;
+  margin-left: 50px;
+}
+.about .about-content .learn-any h3 {
+  color: #1eb2a6;
+}
+.about .about-content .learn-any .about-heading {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+}
+.about .about-content .learn-any .about-card {
+  display: flex;
+  justify-content: none;
+  align-items: none;
+  flex-direction: row;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 4px;
+}
+.about .about-content .learn-any .about-card .ab-card-inner-content {
+  margin-left: 20px;
+}
+.about .about-content .learn-any .about-card .ab-card-inner-content h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+}
+.about .about-content .learn-any .about-card .ab-card-inner-content p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #999999;
+}
+.about .about-content .learn-any .about-card .about-card-logo {
+  width: 100px;
+  height: 100px;
+}
+.about .about-content .learn-any .about-card .one {
+  background: url(/img/logo/inside-logo/1.png) no-repeat;
+}
+.about .about-content .learn-any .about-card .two {
+  background: url(/img/logo/inside-logo/3.png) no-repeat;
+}
+.about .about-content .learn-any .about-card .three {
+  background: url(/img/logo/inside-logo/5.png) no-repeat;
+}
+.about .about-content .learn-any .about-card:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: #1eb2a6;
+}
+.about .about-content .learn-any .about-card:hover .ab-card-inner-content h4, .about .about-content .learn-any .about-card:hover .ab-card-inner-content p {
+  color: white;
+}
+.about .about-content .learn-any .about-card:hover .one {
+  background: url(/img/logo/inside-logo/2.png) no-repeat;
+}
+.about .about-content .learn-any .about-card:hover .two {
+  background: url(/img/logo/inside-logo/4.png) no-repeat;
+}
+.about .about-content .learn-any .about-card:hover .three {
+  background: url(/img/logo/inside-logo/6.png) no-repeat;
 }
 
 header {
@@ -111,7 +205,7 @@ header {
   transition: all 0.5s ease-in-out;
 }
 .sticky .nav .menu-nav_item a:hover {
-  color: #3b71aa;
+  color: rgba(0, 0, 0, 0.8);
   transition: all 0.5s ease-in-out;
 }
 .sticky .nav .nav-bar_btn {

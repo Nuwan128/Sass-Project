@@ -1,0 +1,97 @@
+@import "./config";
+
+.about{
+    width: 100vw;
+    height: 100vw;
+    background: $bgColor;
+    // background: #000;
+    .about-content{
+        padding: 0 100px;
+        @include displayFlex(none,none,row);
+        .about-img{
+            width: 60vw;
+            height: 105vh;
+            background: url(/img/side.png) no-repeat center;
+            background-size:cover;
+        }
+        .learn-any{
+            margin-top: 55px;
+            margin-left: 50px;
+            
+           
+            
+            h3{
+                color: $primaryColor;
+                
+            }
+            .about-heading{
+                margin-top: 20px;
+                margin-bottom: 40px;
+                font-size: 50px;
+                font-weight: 600;
+                line-height: 1;
+                color: $thidColor;
+                
+
+            }
+            .about-card{
+                @include displayFlex(none,none,row);
+               
+                padding: 20px;
+                margin-bottom: 10px;
+                background-color: white;
+                border-radius: 4px;
+                .ab-card-inner-content{
+                    
+                    margin-left:20px ;
+                    h4{
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: $thidColor;
+                    }
+                    p{
+                        margin-top: 20px;
+                        font-size: 16px;
+                        color: $forthColor;
+                    }
+                }
+                .about-card-logo{
+                    width: 100px;
+                    height: 100px;
+                }
+                .one{
+                    background: url(/img/logo/inside-logo/1.png) no-repeat;
+
+                }
+                .two{
+                    background: url(/img/logo/inside-logo/3.png) no-repeat;
+                }
+                .three{
+                    background: url(/img/logo/inside-logo/5.png) no-repeat;
+                }
+                &:hover{
+                    @include transition-ease;
+                    background-color: $primaryColor;
+                    .ab-card-inner-content{
+                        h4,p{
+                            color: white;
+                        }
+                    }
+                    
+                    .one{
+                        background: url(/img/logo/inside-logo/2.png) no-repeat;
+    
+                    }
+                    .two{
+                        background: url(/img/logo/inside-logo/4.png) no-repeat;
+                    }
+                    .three{
+                        background: url(/img/logo/inside-logo/6.png) no-repeat;
+                    }
+                }
+            }
+        }
+    }
+    }
+    
+
